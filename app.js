@@ -22,6 +22,10 @@ app.patch('/routing', (req, res) => {
     res.send("Rota PATCH");
 });
 
+app.delete('/routing', (req, res) => {
+    res.send("Rota DELETE");
+});
+
 app.listen(port, ()=>{
     console.log(`Servidor ouvindo na porta ${port}.`);
 });
